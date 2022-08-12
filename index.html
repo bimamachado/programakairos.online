@@ -27,64 +27,73 @@
             background-attachment: relative;
             background-blend-mode: darken;
         }
+        
+        .a-btn {
+            text-decoration: none;
+            margin: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline;
+            color: #000000;
+            outline: 0;
+            line-height: 1;
+            text-align: center;
+            position: relative !important;
+            display: inline-block !important;
+            border-style: solid;
+            width: 100%;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-top: 20px;
+            padding: 28px 45px;
+            border-radius: 15px;
+            background: #FFDE00;
+            text-align: center;
+        }
+
+        .a-btn:hover {
+            background-color: #1890FF;
+            color: #ffffff;
+        }
+
+        .span-btn {
+            text-decoration: none;
+            margin: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline;
+            display: block;
+            position: relative;
+            padding: 0 15px;
+            white-space: normal;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+        }
+
+        .span-btn2 {
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline;
+            display: block;
+            position: relative;
+            margin: .2em 0 -.5em;
+            font-size: 20px;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-style: italic;
+        }        
+        
     </style>
 
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '718062006161952');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=718062006161952&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-T4JR72J');
-    </script>
-    <!-- End Google Tag Manager -->
-
-
+  
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4JR72J"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
+   
     <header class="py-4">
         <div class="container">
             <div class="row justify-content-center">
@@ -99,25 +108,13 @@
                     <div style="position:relative;padding-top:56.20608899297424%;"><iframe id="panda-4b6e3449-2e11-4cde-96af-7d5949b972c4" src="https://player-vz-49784e87-786.tv.pandavideo.com.br/embed/?v=4b6e3449-2e11-4cde-96af-7d5949b972c4" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
                             allowfullscreen=true width="100%" height="100%"></iframe></div>
                     <!-- Botão 1 -->
-                    <script>
-                        if (!document.querySelector('script[src^="https://player.pandavideo.com.br/api.v2.js"]')) {
-                            let s = document.createElement('script');
-                            s.src = 'https://player.pandavideo.com.br/api.v2.js';
-                            s.async = true;
-                            document.head.appendChild(s);
-                        }
-                        window.pandascripttag = window.pandascripttag || [];
-                        window.pandascripttag.push(function() {
-                            const p = new PandaPlayer('panda-4b6e3449-2e11-4cde-96af-7d5949b972c4', {
-                                onReady() {
-                                    p.loadButtonInTime({
-                                        fetchApi: true
-                                    })
-                                }
-                            });
-                        })
-                    </script>
-                    <div id="f9f00d1c-5d89-4cc6-a5cd-71bec9c92568"></div>
+                    <div class="panda">
+                        <a href="https://pay.kiwify.com.br/4X3Uy67" class="a-btn" style="text-decoration: none;">
+                            <span class="span-btn">QUERO COMEÇAR AGORA!</span>
+                            <span class="span-btn2">(Clique Aqui!)</span>
+                        </a>
+                    </div>
+                    
 
                 </div>
             </div>
@@ -483,7 +480,7 @@
                     </div>
                     <!-- Botão 2 -->
                     <div class="panda">
-                        <a class="button" href="https://pay.kiwify.com.br/eivynCC" title="QUERO COMPRAR AGORA!">QUERO COMPRAR AGORA!</a>
+                        <a class="button" href="https://pay.kiwify.com.br/4X3Uy67" title="QUERO COMPRAR AGORA!">QUERO COMPRAR AGORA!</a>
                     </div>
                 </div>
             </div>
@@ -579,11 +576,11 @@
     </script>
     <style>
         .panda {
-            display: none
+            #display: none
         }
     </style>
     <script>
-        const SECONDS_TO_DISPLAY = 1354;
+        const SECONDS_TO_DISPLAY = 0;
         const CLASS_TO_DISPLAY = 'panda';
         const IFRAME_ID = 'panda-4b6e3449-2e11-4cde-96af-7d5949b972c4'
         const API_ENDPOINT = 'https://player.pandavideo.com.br/api.v2.js'
